@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                'pytest -v testcase\lta_login.py'
             }
         }
     }

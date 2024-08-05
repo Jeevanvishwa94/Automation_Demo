@@ -54,20 +54,17 @@ class LTAPlay(BasePage):
         time.sleep(4)
         
     def signin_username(self,value):
-        time.sleep(2)
+        time.sleep(4)
         self.set(self.locate.signin_username,value)  
     def signin_password(self,value):
         self.set(self.locate.signin_password,value)    
     def signin_button(self): 
         time.sleep(2)    
         self.wait_for_element(self.locate.signin_button).click()
-        time.sleep(2)   
-    
-       
+        time.sleep(2)       
     def set_verify_username(self, value):
         time.sleep(5)   
         self.set(self.locate.Username, value)
- 
     def set_verify_password(self, value):
         self.set(self.locate.Password,value)
        
@@ -76,7 +73,7 @@ class LTAPlay(BasePage):
         self.click(self.locate.Verify_button)
         time.sleep(2)            
     def click_book_class(self):  
-        time.sleep(3) 
+        time.sleep(5) 
         self.actions.send_keys(Keys.PAGE_DOWN).perform()
         self.wait_for_element(self.locate.book_class).click()
         time.sleep(5)   
